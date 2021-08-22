@@ -54,7 +54,7 @@ function Header({ placeholder }) {
            
             {/* Left Logo */}
             <div onClick={() => router.push("/")} className="relative flex items-center h-14
-            cursor-pointer my-auto rounded-full">
+            cursor-pointer my-auto">
                 <Image src="https://faiye.co.uk/wp-content/uploads/2020/09/faiye_logo.jpg" 
                 layout ="fill" 
                 objectFit="contain"
@@ -63,13 +63,12 @@ function Header({ placeholder }) {
             </div>
 
             {/* Middle Search */}
-            <div className="flex items-center md:border-2
-            rounded-full  py-2 md:shadow-sm outline-none">
+            <div className="flex items-center rounded-full border-2 py-2 md:shadow-md outline-none">
                 <input
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
-                className="flex-grow pl-5 bg-transparent text-sm  text-gray-600
-                placeholder-gray-400" type="text" placeholder= {placeholder || "Type London !!!"} />
+                className="flex-grow pl-5 bg-transparent outline-none text-sm  text-gray-600
+                placeholder-gray-500" type="text" placeholder= {placeholder || "Type London !!!"} />
                  
                  <SearchIcon className="hidden md:inline-flex h-12 bg-red-400 text-white 
                  rounded-full p-3.5 cursor-pointer md:mx-3.5" />
@@ -87,7 +86,7 @@ function Header({ placeholder }) {
             </div>
 
             {searchInput && (
-                <div className="flex flex-col col-span-3 mx-auto mt-4">
+                <div className="flex flex-col justify-center bg-white p-2 mt-2 rounded-b-lg rounded-t-sm shadow-sm col-span-3 lg:w-auto mx-auto">
                     <DateRangePicker
                     ranges={[selectionRange]}
                     minDate={new Date()} 
@@ -103,7 +102,7 @@ function Header({ placeholder }) {
                             onChange={e => setNoOfGuests(e.target.value)}
                             type="number" 
                             min = {1}
-                            className="w-12 pl-2 text-lg  text-red-400" 
+                            className="w-12 pl-2 text-lg outline-none text-red-400" 
                             />
                     </div>
                     <div className="flex bg-white pt-4  shadow-sm rounded-b-lg">
