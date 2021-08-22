@@ -6,7 +6,7 @@ function Banner() {
            <Image src="https://wallpaperaccess.com/full/1339694.jpg"  
            layout="fill" objectFit="cover" className="h-full" />
            <div className=" absolute top-1/2 w-full text-center text-yellow-400">
-               <p className="text-sm sm:text-xl md:text-5xl ">Let's Faiye Welcome You</p>
+               <p className="text-2xl sm:text-xl md:text-5xl ">Let's Faiye Welcome You</p>
 
                <button className="text-purple-500 bg-white px-5 py-2
                shadow-md rounded-lg font-semibold my-5 border border-purple-300 hover:shadow-xl 

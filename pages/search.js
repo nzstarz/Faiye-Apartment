@@ -3,6 +3,7 @@ import { useRouter } from "next/dist/client/router";
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import InfoCard from "../Components/InfoCard";
+import Map from "../Components/Map";
 
 function Search({serarchResults}) {
     const router = useRouter();
@@ -49,6 +50,10 @@ function Search({serarchResults}) {
                         />
                     ))}
                     </div>
+                </section>
+
+                <section className=" hidden xl:inline-flex xl:min-w-[600px]">
+                    <Map serarchResults={serarchResults} />
                 </section>
 
             </main>
